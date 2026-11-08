@@ -1,53 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="frontend/assets/profile.jpg" type="image/x-icon">
     <link rel="shortcut icon" href="frontend/assets/profile.jpg" type="image/x-icon">
-    <title>Rahardiyan</title>
-    <!-- Local File -->
-    <link rel="stylesheet" href="frontend/css/styles.css">
-    <link rel="stylesheet" href="frontend/css/styles2.css">
-    <link rel="stylesheet" href="frontend/css/stylesmobile.css">
-    <link rel="stylesheet" href="frontend/css/home_apps_mid.css">
-    <link rel="stylesheet" href="frontend/css/termux_apps_mid.css">
-    <link rel="stylesheet" href="frontend/css/biodata_apps_mid.css">
-    <!-- Fetch File -->
+    <title>RAHARDIYAN YOGA PRATAMA (RyharDev) | Independent Developer</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Personal Developer Portfolio - Rahardiyan Yoga Pratama (RyharDev). Web Developer, JavaScript Developer, Bot Developer from Central Java, Indonesia.">
+    <meta name="author" content="Rahardiyan Yoga Pratama">
+    <meta property="og:title" content="RAHARDIYAN YOGA PRATAMA | Personal Developer Portfolio">
+    <meta property="og:description" content="Building digital experiences, useful applications, automation systems, and web-based solutions.">
+    <meta property="og:url" content="https://rahardiyan.is-a.ceo/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="frontend/css/styles.css">
 </head>
 <body>
-    <div class="full-box">
-        <div id="background-slide-button" class="spawn-background-slide-button"></div>
-        <div id="scale-box" class="scale-box">
-            <div class="content-box slide-down"></div>
-            <div class="content-box slide-up"></div>
-            <div class="content-box slide-down"></div>
-            <div class="content-box slide-up"></div>
-            <div class="content-box slide-down"></div>
-            <div class="content-box slide-up"></div>
-            <div class="content-box slide-down"></div>
-            <div class="content-box slide-up"></div>
-            <div class="ngisor-background"></div>
+    <!-- Full-screen Dynamic Ambient Background -->
+    <div class="ambient-background">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+        <div id="scale-box" class="scale-box"></div>
+        <div class="overlay-vignette"></div>
+    </div>
+
+    <!-- Main Viewport Layout -->
+    <div class="app-layout">
+        <!-- Top Glass Navigation Bar -->
+        <header class="top-navbar">
+            <div class="brand-group">
+                <div class="status-pulse-badge">
+                    <span class="pulse-dot"></span>
+                    <span class="status-text">AVAILABLE FOR PROJECTS</span>
+                </div>
+                <div class="brand-name">
+                    <span class="name-main">RAHARDIYAN</span>
+                    <span class="alias-pill">RyharDev</span>
+                </div>
+            </div>
+
+            <!-- Scrollable Navigation Tabs -->
+            <nav class="nav-links-scrollable" id="main-nav">
+                <button class="nav-btn active" onclick="navigateSection('home')">
+                    <i class="fa-solid fa-house"></i><span>01. Home</span>
+                </button>
+                <button class="nav-btn" onclick="navigateSection('about')">
+                    <i class="fa-solid fa-user"></i><span>02. About</span>
+                </button>
+                <button class="nav-btn" onclick="navigateSection('skills')">
+                    <i class="fa-solid fa-code"></i><span>03. Skills</span>
+                </button>
+                <button class="nav-btn" onclick="navigateSection('projects')">
+                    <i class="fa-solid fa-layer-group"></i><span>04. Projects</span>
+                </button>
+                <button class="nav-btn" onclick="navigateSection('experience')">
+                    <i class="fa-solid fa-briefcase"></i><span>05. Experience</span>
+                </button>
+                <button class="nav-btn" onclick="navigateSection('education')">
+                    <i class="fa-solid fa-graduation-cap"></i><span>06. Education</span>
+                </button>
+                <button class="nav-btn" onclick="navigateSection('environment')">
+                    <i class="fa-solid fa-terminal"></i><span>07. Environment</span>
+                </button>
+                <button class="nav-btn" onclick="navigateSection('services')">
+                    <i class="fa-solid fa-handshake-angle"></i><span>08. Services</span>
+                </button>
+                <button class="nav-btn" onclick="navigateSection('contact')">
+                    <i class="fa-solid fa-envelope"></i><span>09. Contact</span>
+                </button>
+            </nav>
+
+            <div class="nav-quick-actions">
+                <a href="https://api.whatsapp.com/send/?phone=6282323780821&text=Halo+Rahardiyan" target="_blank" rel="noopener noreferrer" class="btn-primary-glow">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Dynamic Glass Surface Display -->
+        <main class="content-surface" id="content-surface">
+            <!-- Dynamic Content Injected Here -->
+        </main>
+
+        <!-- Live Status Bar (Zero Wasted Space Footer) -->
+        <footer class="bottom-system-bar">
+            <div class="sys-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Boyolali, Jawa Tengah, Indonesia</span>
+            </div>
+            <div class="sys-item hide-mobile">
+                <i class="fa-solid fa-globe"></i>
+                <a href="https://rahardiyan.is-a.ceo/" target="_blank">rahardiyan.is-a.ceo</a>
+            </div>
+            <div class="sys-item hide-mobile">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Independent / Self-taught Developer</span>
+            </div>
+            <div class="sys-item sys-time" id="sys-clock">
+                00:00:00 WIB
+            </div>
+        </footer>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal-overlay" onclick="closeProjectModal(event)">
+        <div class="modal-glass-container" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div class="modal-title-box">
+                    <span class="modal-category" id="modal-category">Full-Stack Web Development</span>
+                    <h2 id="modal-title">LUTOPUP</h2>
+                    <p id="modal-subtitle">Premium Top-Up Platform & Payment Gateway</p>
+                </div>
+                <button class="modal-close-btn" onclick="closeProjectModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content loaded dynamically -->
+            </div>
         </div>
     </div>
-    <div class="center">
-        <div id="app-navigator" class="base-unshown-app">
-        </div>
-    </div>
-    <div class="center">
-        <div id="menu-box" class="menu-box">
-            <div id="spawn-app-home"      class="spawn-apk home"      onclick="toggleAppNavigation('home')"><i class="fa-solid fa-house"></i></div>
-            <div id="spawn-app-biodata"   class="spawn-apk biodata"   onclick="toggleAppNavigation('biodata'); isBiodataActive()"><i class="fa-solid fa-graduation-cap"></i></div>
-            <div id="spawn-app-termux"    class="spawn-apk termux"    onclick="toggleAppNavigation('termux')"><i class="fa-solid fa-terminal"></i></div>
-            <div id="spawn-app-project"   class="spawn-apk project"   onclick="toggleAppNavigation('project')"><i class="fa-solid fa-code"></i></div>
-            <div id="spawn-app-portfolio" class="spawn-apk portfolio" onclick="toggleAppNavigation('portfolio')"><i class="fa-regular fa-file"></i></div>
-        </div>
-    </div>
+
+    <!-- Scripts -->
     <script src="frontend/javascript/script.js"></script>
-    <script src="frontend/javascript/script2.js"></script>
+    <script src="frontend/javascript/content.js"></script>
     <script src="frontend/javascript/terminal.js"></script>
-    <script src="frontend/javascript/biodata.js"></script>
 </body>
 </html>

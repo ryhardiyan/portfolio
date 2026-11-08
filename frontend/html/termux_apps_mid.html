@@ -1,23 +1,29 @@
-<div id="profile-card" class="type-app-termux">
-    <div class="header-card">
-        <div class="bullet-card left">
-            <div class="bullet-bullet red" onclick="activateLogo('termux', false); activateApp('termux', false); backgroundSlider()"></div>
-            <div class="bullet-bullet yellow"></div>
-            <div class="bullet-bullet green"></div>
+<div class="termux-wrapper">
+    <div class="termux-header-bar">
+        <div class="termux-window-controls">
+            <span class="termux-dot red" onclick="switchApp('home')"></span>
+            <span class="termux-dot yellow"></span>
+            <span class="termux-dot green"></span>
         </div>
-        <div class="welcome-header">welcome.py</div>
-        <div class="bullet-card right">
-            <div class="bullet-bullet green"></div>
-            <div class="bullet-bullet yellow"></div>
-            <div class="bullet-bullet red" onclick="activateLogo('termux', false); activateApp('termux', false); backgroundSlider()"></div>
-        </div>
+        <div class="termux-title">ryhardev@boyolali-server: ~ (bash)</div>
+        <div style="font-size: 0.75rem; color: #10b981;">● CONNECTED</div>
     </div>
-    <div class="terminal-container">
-        <div class="header-terminal">
-            <span id="printing" class="print-header-terminal"></span>
-        </div>
-        <div id="body-terminal" class="body-terminal">
-            <input id="terminal-input" class="row-terminal-input" type="text" onkeydown="handleKeyDown(event)" autocomplete="off"></input>
+
+    <div class="termux-screen" id="termux-screen" onclick="focusTerminalInput()">
+        <pre class="termux-banner">
+  _____       _                 _____            
+ |  __ \     | |               |  __ \           
+ | |__) |   _| |__   __ _ _ __ | |  | | _____   __
+ |  _  / | | | '_ \ / _` | '__|| |  | |/ _ \ \ / /
+ | | \ \ |_| | | | | (_| | |   | |__| |  __/\ V / 
+ |_|  \_\__, |_| |_|\__,_|_|   |_____/ \___| \_/  
+         __/ |                                    
+        |___/        Type 'help' to see available commands.
+        </pre>
+        <div id="termux-history"></div>
+        <div class="termux-input-row">
+            <span class="termux-prompt-symbol">ryhardev@portfolio:~$</span>
+            <input type="text" id="termux-input" autocomplete="off" spellcheck="false" autofocus onkeydown="onTermuxKeyDown(event)">
         </div>
     </div>
 </div>
