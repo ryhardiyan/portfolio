@@ -1,101 +1,108 @@
-<div class="biodata-page-wrapper">
-    <div class="cv-header-panel">
-        <div class="cv-header-title">
-            <h2>Biodata, Pendidikan & Keahlian</h2>
-            <span>Profil lengkap, latar belakang akademis, dan spesialisasi teknis.</span>
-        </div>
-        <button class="btn-primary" onclick="window.print()">
-            <i class="fa-solid fa-print"></i> Cetak / Save CV
-        </button>
-    </div>
-
-    <div class="cv-grid-two-columns">
-        <!-- Riwayat Pendidikan & Karier -->
-        <div class="cv-card">
-            <div class="cv-card-header">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <h3>Riwayat Pendidikan & Pengalaman</h3>
-            </div>
-            <div class="timeline-list">
-                <div class="timeline-item">
-                    <span class="timeline-year">2025 - Sekarang</span>
-                    <div class="timeline-school">Freelance Remote Web & Backend Developer</div>
-                    <div class="timeline-desc">Mengerjakan integrasi REST API, otomasi server Linux, sistem hotspot jaringan, dan web apps.</div>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-year">2023 - 2025</span>
-                    <div class="timeline-school">SMK Negeri 01 Nogosari</div>
-                    <div class="timeline-desc">Fokus Rekayasa Perangkat Lunak / Teknik Komputer dan Jaringan.</div>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-year">2019 - 2023</span>
-                    <div class="timeline-school">SMP Negeri 01 Ngemplak</div>
-                    <div class="timeline-desc">Pendidikan Menengah Pertama di Boyolali, Jawa Tengah.</div>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-year">2014 - 2019</span>
-                    <div class="timeline-school">SD Negeri 03 Manggung</div>
-                    <div class="timeline-desc">Pendidikan Dasar di Manggung, Ngemplak.</div>
+<div id="biodata" class="type-app-biodata">
+    <div id="scroller-biodata" class="scroll-box-biodata">
+        <section class="scroll-item-biodata satu">
+            <div class="box-item-biodata">
+                <div class="box-section-biodata section1 background">
+                    <div class="box-content-section1">
+                        <h1>BIODATA</h1>
+                        <div class="description-biodata">
+                            <span>
+                                Rahardiyan Yoga Pratama was born on Oct 10, 2010 in Boyolali City.
+                                Grew up in Ngemplak Regency, Central Java.<br><br>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="scroll-down-biodata" class="biodata-scroll-box bounce2 active">
+                        <span>Scroll</span>
+                        <i class="fa-solid fa-angles-down"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Spesialisasi & Tingkat Keahlian -->
-        <div class="cv-card">
-            <div class="cv-card-header">
-                <i class="fa-solid fa-sliders"></i>
-                <h3>Spesialisasi Kemampuan</h3>
-            </div>
-            
-            <div class="skill-bar-row">
-                <div class="skill-info">
-                    <span>Backend Development (Node.js / Express / REST API)</span>
-                    <span>90%</span>
-                </div>
-                <div class="progress-track">
-                    <div class="progress-fill" style="width: 90%;"></div>
-                </div>
-            </div>
-
-            <div class="skill-bar-row">
-                <div class="skill-info">
-                    <span>Database Management (PostgreSQL / MongoDB / SQLite)</span>
-                    <span>85%</span>
-                </div>
-                <div class="progress-track">
-                    <div class="progress-fill" style="width: 85%;"></div>
-                </div>
-            </div>
-
-            <div class="skill-bar-row">
-                <div class="skill-info">
-                    <span>Linux System, Bash Scripting & Termux CLI</span>
-                    <span>88%</span>
-                </div>
-                <div class="progress-track">
-                    <div class="progress-fill" style="width: 88%;"></div>
+        </section>
+        <section class="scroll-item-biodata dua scroller">
+            <div id="box-item-biodata-0" class="box-item-biodata scroll-true">
+                <div class="box-section-biodata section2 background">
+                    <div class="box-content-section2">
+                        <h1>EDUCATION</h1>
+                        <div class="education-box">
+                            <div class="education-item">
+                                <h3>2014 - 2019</h3>
+                                <span>SD Negeri 03 Manggung</span>
+                            </div>
+                            <div class="education-item">
+                                <h3>2019 - 2023</h3>
+                                <span>SMP Negeri 01 Ngemplak</span>
+                            </div>
+                            <div class="education-item">
+                                <h3>2023 - 2025</h3>
+                                <span>SMK Negeri 01 Nogosari</span>
+                            </div>
+                            <div class="education-item">
+                                <h3>2025 - now</h3>
+                                <span>Currently working as a remote freelancer.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="skill-bar-row">
-                <div class="skill-info">
-                    <span>Modern Frontend UI (HTML5, Modern CSS, Responsive Design)</span>
-                    <span>82%</span>
-                </div>
-                <div class="progress-track">
-                    <div class="progress-fill" style="width: 82%;"></div>
+        </section>
+        <section class="scroll-item-biodata tiga scroller">
+            <div id="box-item-biodata-1" class="box-item-biodata scroll-true">
+                <div class="box-section-biodata section3 background">
+                    <div class="box-content-section3">
+                        <h1>HOBBY</h1>
+                        <div class="hobby-box">
+                            <div class="hobby-box-item">
+                                <div class="hobby-name"><span>Coding</span></div>
+                                <div class="hobby-bar coding"></div>
+                            </div>
+                            <div class="hobby-box-item">
+                                <div class="hobby-name"><span>Music</span></div>
+                                <div class="hobby-bar music"></div>
+                            </div>
+                            <div class="hobby-box-item">
+                                <div class="hobby-name"><span>Gadget</span></div>
+                                <div class="hobby-bar gadget"></div>
+                            </div>
+                            <div class="hobby-box-item">
+                                <div class="hobby-name"><span>Riding</span></div>
+                                <div class="hobby-bar riding"></div>
+                            </div>
+                            <div class="hobby-box-item">
+                                <div class="hobby-name"><span>Game</span></div>
+                                <div class="hobby-bar game"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="skill-bar-row">
-                <div class="skill-info">
-                    <span>Golang (Go) & Microservices Architecture</span>
-                    <span>75%</span>
-                </div>
-                <div class="progress-track">
-                    <div class="progress-fill" style="width: 75%;"></div>
+        </section>
+        <section class="scroll-item-biodata empat scroller">
+            <div id="box-item-biodata-2" class="box-item-biodata scroll-true">
+                <div class="box-section-biodata section4 background">
+                    <div class="box-content-section4">
+                        <h1>SKILL</h1>
+                        <div class="skill-box">
+                            <div class="skill-item">
+                                <h3>FrontEnd</h3>
+                                <span>HTML, CSS,<br>JavaScript (VanillaJS)</span>
+                            </div>
+                            <div class="skill-item">
+                                <h3>BackEnd</h3>
+                                <span>Python (Flask),<br>JavaScript (NodeJS)</span>
+                            </div>
+                            <div class="skill-item">
+                                <h3>Database</h3>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <h3>Role</h3>
+                                <span>Web Development, Web Scraping,<br>API Development, Automation</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </div>
